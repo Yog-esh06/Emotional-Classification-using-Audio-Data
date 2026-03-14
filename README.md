@@ -30,7 +30,7 @@ The dataset folder is not included in this repo because of file size. Download R
 
 ## Notebooks
 
-### emotion_classification_MFCC_delta.ipynb
+### MFCC_delta.ipynb
 Uses MFCC (40 coefficients) combined with delta and delta-delta derivatives as a 3-channel input to a CNN. Delta features capture how the MFCCs change over time which helps distinguish emotions with similar static spectra but different dynamics.
 
 ### MFCC_pitch_energy.ipynb
