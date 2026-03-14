@@ -1,6 +1,5 @@
 # Emotional Classification using Audio Data
 
-SRM Institute of Science and Technology, Kattankulathur
 Undergraduate Research Opportunities Programme (UROP)
 
 ---
