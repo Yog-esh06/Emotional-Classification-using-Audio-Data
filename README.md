@@ -24,7 +24,7 @@ Livingstone and Russo (2018), PLOS ONE. https://doi.org/10.1371/journal.pone.019
 - Around 2068 audio samples across 6 emotion classes
 - Files are organised into per-emotion folders inside dataset/
 
-The dataset folder is not included in this repo because of file size. Download RAVDESS from https://drive.google.com/drive/folders/1kAZr-x6Bo7ZjcYIoZaiV0WriIERQCxnj?usp=drive_link and organise the files into emotion subfolders under dataset/.
+Download RAVDESS from https://drive.google.com/drive/folders/1kAZr-x6Bo7ZjcYIoZaiV0WriIERQCxnj?usp=drive_link and organise the files into emotion subfolders under dataset/.
 
 ---
 
