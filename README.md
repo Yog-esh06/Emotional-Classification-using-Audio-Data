@@ -17,14 +17,19 @@ Emotions: angry, calm, fearful, happy, neutral, sad
 
 ## Dataset
 
-RAVDESS - Ryerson Audio-Visual Database of Emotional Speech and Song
-Livingstone and Russo (2018), PLOS ONE. https://doi.org/10.1371/journal.pone.0196391
+This project utilizes a merged dataset consisting of **5,252** audio samples to improve model robustness and speaker diversity.
 
-- 24 actors (12 male, 12 female)
-- Around 2068 audio samples across 6 emotion classes
-- Files are organised into per-emotion folders inside dataset/
+### 1. RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)
+- Source: Livingstone and Russo (2018), PLOS ONE. https://doi.org/10.1371/journal.pone.0196391
+- Content: 24 actors (12 male, 12 female) providing 2,452 audio samples.
+- Files are organized into per-emotion folders inside dataset/
 
-Download RAVDESS from https://drive.google.com/drive/folders/1kAZr-x6Bo7ZjcYIoZaiV0WriIERQCxnj?usp=drive_link and organise the files into emotion subfolders under dataset/.
+### 2. TESS (Toronto Emotional Speech Set)
+- Source: Pichora-Fuller, M. Kathleen; Dupuis, Kate (2020).
+- Content: 2,800 samples from two female speakers (younger and older).
+- These samples were integrated to provide a wider variety of pitch and vocal characteristics.
+
+Download the datasets and organize the files into emotion-specific subfolders under the dataset/ directory.
 
 ---
 
@@ -52,7 +57,7 @@ Uses MFCC (40 coefficients) alongside pitch (fundamental frequency F0) and RMS e
 | Notebook | Features | Test Accuracy |
 |----------|----------|---------------|
 | MFCC_delta | MFCC + Delta + Delta-Delta | 92.78% |
-| MFCC_pitch_energy | MFCC + Pitch + Energy | 89.94%  |
+| MFCC_pitch_energy | MFCC + Pitch + Energy | 89.94% |
 
 Charts and confusion matrices are in the outputs/ folder.
 
@@ -62,28 +67,22 @@ Charts and confusion matrices are in the outputs/ folder.
 
 1. Clone the repo
 2. Install dependencies
-3. Download RAVDESS and set up the dataset folder
+3. Download RAVDESS and TESS datasets and set up the dataset folder
 4. Open either notebook in Google Colab
 5. Enable T4 GPU under Runtime -> Change runtime type
 6. Run all cells top to bottom
 
 ---
 
-## Dependencies
-```
-pip install librosa tensorflow scikit-learn seaborn matplotlib numpy soundfile
-```
+## Authors
 
----
+- Yogesh R Mehta
+- Shreyas Gupta
 
 ## References
 
-Livingstone S, Russo F (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). PLOS ONE 13(5): e0196391. https://doi.org/10.1371/journal.pone.0196391
-
----
-
-## Authors
-
-Yogesh R Mehta
-
-Shreyas Gupta
+- Livingstone S, Russo F (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). PLOS ONE 13(5): e0196391. https://doi.org/10.1371/journal.pone.0196391
+- Pichora-Fuller, M. Kathleen; Dupuis, Kate (2020). Toronto Emotional Speech Set (TESS). https://doi.org/10.5683/SP2/E8H2MF
+## Dependencies
+```bash
+pip install librosa tensorflow scikit-learn seaborn matplotlib numpy soundfile
